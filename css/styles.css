@@ -56,10 +56,12 @@ h2 {
 #footer {
     display: block;
     position: relative;
+    left: 100px;
     background-color: deepskyblue;
     height: 50px;
     width: 200px;
     border-radius: 50px;
+
 
 }
 p {
