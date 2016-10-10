@@ -9,5 +9,6 @@ body {
 li {
     display: inline;
     font-family: Impact, Charcoal, sans-serif;
+    font-size: 16px;
     color: white;
 }
