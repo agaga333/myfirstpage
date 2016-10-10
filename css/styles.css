@@ -6,8 +6,8 @@ html {
     background-size: cover;
 }
 
-* { outline: 1px solid red;
-}
+/** { outline: 1px solid red;
+}*/
 #navbar {
     position: fixed;
     top: 30px;
