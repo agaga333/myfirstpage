@@ -54,6 +54,7 @@ h2 {
 
 }
 #footer {
+    display: block;
     position: relative;
     background-color: deepskyblue;
     height: 50px;
