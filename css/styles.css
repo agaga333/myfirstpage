@@ -5,13 +5,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
-body {
-    background-color: grey;
-   /* background-image: url("http://i.wp.pl/a/f/jpeg/34780/komputer-telefon-tablet-biurko-biuro-660.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;*/
 
-}
 * { outline: 1px solid red;
 }
 #navbar {
