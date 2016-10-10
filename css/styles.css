@@ -3,3 +3,9 @@ body {
 }
 * { outline: 1px solid red;
 }
+#navbar {
+
+}
+li {
+    display: inline;
+}
