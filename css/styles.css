@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    background-color: grey;
 }
 * { outline: 1px solid red;
 }
@@ -8,4 +8,6 @@ body {
 }
 li {
     display: inline;
+    font-family: Impact, Charcoal, sans-serif;
+    color: white;
 }
