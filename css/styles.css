@@ -4,7 +4,9 @@ body {
 * { outline: 1px solid red;
 }
 #navbar {
-
+    position: fixed;
+    top: 30px;
+    margin-left: 50px;
 }
 li {
     display: inline;
