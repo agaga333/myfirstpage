@@ -32,3 +32,11 @@ a:active {
     color:deepskyblue;
     text-decoration: underline;
 }
+h1 {
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+    color: white;
+}
+h3 {
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+    color: white;
+}
