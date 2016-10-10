@@ -40,6 +40,11 @@ h3 {
     font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
     color: white;
 }
+#section {
+    display: block;
+    float: none;
+    text-align: center;
+}
 #footer {
     background-color: deepskyblue;
     height: 50px;
