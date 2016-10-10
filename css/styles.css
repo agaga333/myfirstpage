@@ -1,9 +1,11 @@
-
+html {
+    background: url(http://i.wp.pl/a/f/jpeg/34780/komputer-telefon-tablet-biurko-biuro-660.jpeg) no-repeat center center fixed;
+}
 body {
     background-color: grey;
-    background-image: url("http://i.wp.pl/a/f/jpeg/34780/komputer-telefon-tablet-biurko-biuro-660.jpeg");
+   /* background-image: url("http://i.wp.pl/a/f/jpeg/34780/komputer-telefon-tablet-biurko-biuro-660.jpeg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 
 }
 * { outline: 1px solid red;
