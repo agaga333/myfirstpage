@@ -6,7 +6,7 @@ body {
 #navbar {
     position: fixed;
     top: 30px;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 li {
     display: inline;
