@@ -142,7 +142,7 @@ header div div p {
     background-color: transparent;
     width: 100%;
     top:50%;
-    transform: translate Y(-50%);
+    transform: translateY(-50%);
 }
 
 .footer {
