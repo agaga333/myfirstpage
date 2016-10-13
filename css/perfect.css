@@ -1,0 +1,165 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    background-image:url('../images/mountain.jpg');
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.napis {
+    position: absolute;
+    width: 30%;
+    top: 45%;
+    font-family: Palatino, serif;
+    color: darkblue;
+}
+
+.napis-title {
+    font-size: 60px;
+}
+
+header div div h1 { /*czy to jest ok sposób, żeby nadać im włąściwy odstęp? jak próbowałam jakoś klasą to ustawić to mi nie wychodziło*/
+    margin-bottom: 15px;
+}
+
+header div div p {
+    margin-top: 15px;
+}
+
+.napis-subtitle {
+    font-size: 20px;
+}
+
+.mobile {
+    background-image:url('../images/samsung.png');
+    background-size: cover;
+    width: 40%;
+    height: 90%;
+    position: absolute;
+    top: 42%;
+    right: 5%;   /*czy jest możliwość ustawienia tego przy prawym boku "conteinera", tak żeby mieć pewność, że nie wychodzi poza container*/
+}
+
+.section {
+    margin-top: 100px;
+}
+
+.section-title {
+    font-size: 35px;
+}
+
+.table {
+    font-size: 16px;
+}
+
+.table-td {
+    width: 5%;
+}
+
+.first-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.left {
+    position: relative;
+    float: left;
+    width: 47%;
+    text-align: justify;
+}
+
+.right {
+    position: relative;
+    float: right;
+    width: 47%;
+    bottom: -15vh; /*cy jest jakiś lepszy sposób na wyrównanie tekstu do dołu?*/
+    text-align: justify;
+}
+
+.middle {
+    clear: both;
+}
+
+#rozowy {
+    position: relative;
+    display: inline-block;
+    background-color: hotpink;
+    width: 33%;
+    height: 200px;
+}
+
+#fioletowy {
+    position:relative;
+    display: inline-block;
+    background-color: blueviolet;
+    width: 33%;
+    height: 200px;
+}
+
+#zachod {
+    position: relative;
+    display: inline-block;
+    background-image: url('../images/zachod.jpg');
+    background-size: 390px 200px; /*"cover" powodowało, że obrazek był "przycinany", czy taki sposób jest ok?*/
+    width: 33%;
+    height: 200px;
+}
+
+#purpurowy {
+    position: absolute; /*udało mi się to zrobić przez przypadek, dlaczego ten element nie ignoruje innych elementów z pozycją relative?*/
+    display: inline-block;
+    background-color: violet;
+    width: 220px; /*nie potrafię znaleźć rozwiązania, żeby purpurowy dopasował się do pozostałej przestrzeni strony; próbowałam zmieniać container, na taki, który ma wyłącznie margines lewy nie wyszło; próbowałam nadać szerokość taką jak pozostałe zakładki 1170/3=390px, ale wtedy pojawia się suwak poziomy i po prawej stronie header powstaje biały margines*/
+    height: 200px;
+    right:0;
+}
+
+#slonce {
+    position: relative;
+    display: inline-block;
+    background-image: url('../images/slonce.jpg');
+    background-size: 780px 200px;
+    width: 66%;
+    height: 200px;
+}
+
+#zielony {
+    position: relative;
+    display: inline-block;
+    background-color: lightgreen;
+    width: 33%;
+    height: 200px;
+}
+
+#owad {
+    position: absolute;
+    display: inline-block;
+    background-image: url('../images/owad.jpg');
+    background-size: 390px 200px;
+    width: 220px;
+    height: 200px;
+    right:0;
+}
+
+.footer {
+    margin-top:300px;
+}
+
+
+
+
+
+

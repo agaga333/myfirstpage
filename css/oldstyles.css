@@ -1,0 +1,80 @@
+html {
+    background: url(http://i.wp.pl/a/f/jpeg/34780/komputer-telefon-tablet-biurko-biuro-660.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/** { outline: 1px solid red;
+}*/
+
+/*nie stylujemy po "id"*/
+#navbar {
+    position: fixed;
+    top: 30px;
+    margin-left: 400px;
+}
+/*nie stylujemy po tagach*/
+li {
+    display: inline;
+    font-family: Arial Black, Gadget, sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+
+}
+/*nie stylujemy po tagach*/
+a:link {
+    color:white;
+    text-decoration: none;
+}
+a:visited {
+    color:white;
+    text-decoration: underline;
+}
+a:hover {
+    color: deepskyblue;
+    text-decoration: underline;
+}
+a:active {
+    color:deepskyblue;
+    text-decoration: underline;
+}
+h1 {
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif; /*font-falmily w "body" - jest dziedziczone*/
+    color: white;
+    font-size: 30px;
+}
+h2 {
+    font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+    color: white;
+}
+#section {
+    display: block;
+    float: none;
+    text-align: center;
+    margin-top: 350px;
+}
+#section p {
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+    color: white;
+    font-size: 60px;
+
+}/*jak zmniejszyć odstęp pomiędzy h2 i p w section?*/
+#footer {
+    display: block;
+    position: relative;
+    left: 700px; /*skad mam wiedziec, ze na kazdym monitorze wyswietli sie po srodku?*/
+    background-color: deepskyblue;
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+}
+p {
+    position: relative;
+    text-align: center;
+    padding:15px; /*czy takie na oko ustawienie napisu po środku jest ok (pewnie nie)?*/
+    font-family: Arial Black, Gadget, sans-serif;
+    color: white;
+}
