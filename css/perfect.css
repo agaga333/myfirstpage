@@ -17,6 +17,7 @@ html {
     width: 1170px;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 50px;
 }
 
 .text {
@@ -64,13 +65,7 @@ header div div p {
     font-size: 35px;
 }
 
-.table {
-    font-size: 16px;
-}
 
-.table-td {
-    width: 5%;
-}
 
 .first-line {
     /* TODO margin top i bottom jak są takie same to możemy skrócić do: margin: 20px 0; */
@@ -78,6 +73,14 @@ header div div p {
     margin-bottom: 20px;
     line-height: 25px;
 }
+
+.second-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    padding-left: 30px;
+}
+
 
 /* TODO left i right wygladają tak samo, nie trzeba ich rozdziela na float left i right - do omówienia ze mną*/
 .left {
@@ -104,6 +107,10 @@ header div div p {
     position: relative;
     display: inline-block;
     height: 200px;
+}
+
+.item-width-minimum {
+    width: 25%;
 }
 
 /* TODO klasy poniżej nie sumują się do 100% */
@@ -140,11 +147,34 @@ header div div p {
 .item-vertical-align {
     position: absolute;
     background-color: transparent;
+    color: white;
     width: 100%;
     top:50%;
     transform: translateY(-50%);
 }
 
+.item-padding {
+    padding-left: 20px;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin-left: 20px;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section-title2 {
+    margin-top: 75px;
+    font-size: 35px;
+}
+
+.item-properties {
+    color: black;
+}
 .footer {
     margin-top:300px;
 }
