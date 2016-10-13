@@ -18,7 +18,7 @@ html {
     margin-left: auto;
 }
 
-.napis {
+.text {
     position: absolute;
     width: 30%;
     top: 45%;
@@ -26,7 +26,7 @@ html {
     color: darkblue;
 }
 
-.napis-title {
+.text-title {
     font-size: 60px;
 }
 
@@ -38,7 +38,7 @@ header div div p {
     margin-top: 15px;
 }
 
-.napis-subtitle {
+.text-subtitle {
     font-size: 20px;
 }
 
@@ -50,6 +50,7 @@ header div div p {
     position: absolute;
     top: 42%;
     right: 5%;   /*czy jest możliwość ustawienia tego przy prawym boku "conteinera", tak żeby mieć pewność, że nie wychodzi poza container*/
+
 }
 
 .section {
@@ -93,65 +94,48 @@ header div div p {
     clear: both;
 }
 
-#rozowy {
+.item-background {
     position: relative;
     display: inline-block;
+    height: 200px;
+}
+
+.item-width-standard {
+    width: 33%;
+}
+
+.item-width-maximum {
+    width: 66%;
+}
+
+.item-pink {
     background-color: hotpink;
-    width: 33%;
-    height: 200px;
 }
 
-#fioletowy {
-    position:relative;
-    display: inline-block;
+.item-purple {
     background-color: blueviolet;
-    width: 33%;
-    height: 200px;
 }
 
-#zachod {
-    position: relative;
-    display: inline-block;
+.item-first-image {
     background-image: url('../images/zachod.jpg');
-    background-size: 390px 200px; /*"cover" powodowało, że obrazek był "przycinany", czy taki sposób jest ok?*/
-    width: 33%;
-    height: 200px;
+    background-size: 390px 200px;
 }
 
-#purpurowy {
-    position: absolute; /*udało mi się to zrobić przez przypadek, dlaczego ten element nie ignoruje innych elementów z pozycją relative?*/
-    display: inline-block;
-    background-color: violet;
-    width: 220px; /*nie potrafię znaleźć rozwiązania, żeby purpurowy dopasował się do pozostałej przestrzeni strony; próbowałam zmieniać container, na taki, który ma wyłącznie margines lewy nie wyszło; próbowałam nadać szerokość taką jak pozostałe zakładki 1170/3=390px, ale wtedy pojawia się suwak poziomy i po prawej stronie header powstaje biały margines*/
-    height: 200px;
-    right:0;
-}
-
-#slonce {
-    position: relative;
-    display: inline-block;
+.item-second-image {
     background-image: url('../images/slonce.jpg');
     background-size: 780px 200px;
-    width: 66%;
-    height: 200px;
 }
 
-#zielony {
-    position: relative;
-    display: inline-block;
+.item-green {
     background-color: lightgreen;
-    width: 33%;
-    height: 200px;
 }
 
-#owad {
-    position: absolute;
-    display: inline-block;
-    background-image: url('../images/owad.jpg');
-    background-size: 390px 200px;
-    width: 220px;
-    height: 200px;
-    right:0;
+.item-vertical-align {
+    position: relative;
+  
+    background-color: transparent;
+    width: 100%;
+    vertical-align: middle;
 }
 
 .footer {
