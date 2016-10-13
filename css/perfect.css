@@ -13,6 +13,7 @@ html {
 }
 
 .container {
+    position: relative;
     width: 1170px;
     margin-right: auto;
     margin-left: auto;
@@ -88,7 +89,7 @@ header div div p {
 
 .right {
     position: relative;
-    float: right;
+    float: left;
     width: 47%;
     bottom: -15vh; /*cy jest jakiś lepszy sposób na wyrównanie tekstu do dołu?*/ /* TODO nie używamy vh, tylko jak tło głównego slidera*/
     text-align: justify;
@@ -107,11 +108,11 @@ header div div p {
 
 /* TODO klasy poniżej nie sumują się do 100% */
 .item-width-standard {
-    width: 33%;
+    width: 33.333333333333%;
 }
 
 .item-width-maximum {
-    width: 66%;
+    width: 66.666666666666%;
 }
 
 .item-pink {
@@ -137,10 +138,11 @@ header div div p {
 }
 
 .item-vertical-align {
-    position: relative;
+    position: absolute;
     background-color: transparent;
     width: 100%;
-    vertical-align: middle;
+    top:50%;
+    transform: translate Y(-50%);
 }
 
 .footer {
