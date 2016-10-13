@@ -19,7 +19,7 @@ html {
 }
 
 .text {
-    position: absolute;
+    position: absolute; /* TODO absolute tylko tam gdzie rodzic ma position: relative */
     width: 30%;
     top: 45%;
     font-family: Palatino, serif;
@@ -30,10 +30,12 @@ html {
     font-size: 60px;
 }
 
+/* TODO poniżej zly selektor, dodać klasę do h1 i wtedy stylować, margin-bottom jest jeśli chcemy w pionie odsunać elementy */
 header div div h1 { /*czy to jest ok sposób, żeby nadać im włąściwy odstęp? jak próbowałam jakoś klasą to ustawić to mi nie wychodziło*/
     margin-bottom: 15px;
 }
 
+/* TODO dodać klasę do "p" i usunać header div div */
 header div div p {
     margin-top: 15px;
 }
@@ -70,11 +72,13 @@ header div div p {
 }
 
 .first-line {
+    /* TODO margin top i bottom jak są takie same to możemy skrócić do: margin: 20px 0; */
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 25px;
 }
 
+/* TODO left i right wygladają tak samo, nie trzeba ich rozdziela na float left i right - do omówienia ze mną*/
 .left {
     position: relative;
     float: left;
@@ -86,10 +90,11 @@ header div div p {
     position: relative;
     float: right;
     width: 47%;
-    bottom: -15vh; /*cy jest jakiś lepszy sposób na wyrównanie tekstu do dołu?*/
+    bottom: -15vh; /*cy jest jakiś lepszy sposób na wyrównanie tekstu do dołu?*/ /* TODO nie używamy vh, tylko jak tło głównego slidera*/
     text-align: justify;
 }
 
+/* TODO w takich przypadkach tworzy się klasę .clearfix, która ma clear:both, używamy takiego diva do czyśzczenia floatów */
 .middle {
     clear: both;
 }
@@ -100,6 +105,7 @@ header div div p {
     height: 200px;
 }
 
+/* TODO klasy poniżej nie sumują się do 100% */
 .item-width-standard {
     width: 33%;
 }
@@ -132,7 +138,6 @@ header div div p {
 
 .item-vertical-align {
     position: relative;
-  
     background-color: transparent;
     width: 100%;
     vertical-align: middle;
