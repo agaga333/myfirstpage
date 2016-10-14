@@ -17,109 +17,110 @@ html {
     width: 1170px;
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 50px;
 }
 
-.text {
+.header-text {
     position: absolute; /* TODO absolute tylko tam gdzie rodzic ma position: relative */
-    width: 30%;
-    top: 45%;
+    width: 40%;
+    top: 50vh;
     font-family: Palatino, serif;
     color: darkblue;
+    text-shadow: 4px 4px 8px black;
 }
 
-.text-title {
+.header-text-title {
     font-size: 60px;
-}
-
-/* TODO poniżej zly selektor, dodać klasę do h1 i wtedy stylować, margin-bottom jest jeśli chcemy w pionie odsunać elementy */
-header div div h1 { /*czy to jest ok sposób, żeby nadać im włąściwy odstęp? jak próbowałam jakoś klasą to ustawić to mi nie wychodziło*/
     margin-bottom: 15px;
 }
 
-/* TODO dodać klasę do "p" i usunać header div div */
-header div div p {
+.header-text-subtitle {
+    font-size: 20px;
     margin-top: 15px;
 }
 
-.text-subtitle {
-    font-size: 20px;
-}
-
-.mobile {
+.header-background-mobile {
+    position: absolute;
     background-image:url('../images/samsung.png');
     background-size: cover;
-    width: 40%;
-    height: 90%;
-    position: absolute;
-    top: 42%;
-    right: 5%;   /*czy jest możliwość ustawienia tego przy prawym boku "conteinera", tak żeby mieć pewność, że nie wychodzi poza container*/
-
+    width: 650px;
+    height: 750px;
+    top: 42vh;
+    right: -6vw;   /*czy jest możliwość ustawienia tego przy prawym boku "conteinera", tak żeby mieć pewność, że nie wychodzi poza container*/
 }
 
 .section {
     margin-top: 100px;
 }
 
-.section-title {
+.product-description{
+
+}
+
+.product-description-section-title {
     font-size: 35px;
 }
 
+/* TODO left i right wygladają tak samo, nie trzeba ich rozdziela na float left i right - do omówienia ze mną*/
+.product-info-left {
+    position: relative;
+    float: left;
+    width: 50%;
+    text-align: justify;
+    margin-bottom: 60px;
+}
 
+.product-info-right {
+    position: relative;
+    float: left;
+    width: 50%;
+    bottom: -15vh; /*cy jest jakiś lepszy sposób na wyrównanie tekstu do dołu?*/ /* TODO nie używamy vh, tylko jak tło głównego slidera*/
+    text-align: justify;
+}
 
-.first-line {
+.paragraph-styling-left {
     /* TODO margin top i bottom jak są takie same to możemy skrócić do: margin: 20px 0; */
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 25px;
+    padding-right: 30px;
 }
 
-.second-line {
+.paragraph-styling-right {
     margin-top: 20px;
     margin-bottom: 20px;
     line-height: 25px;
     padding-left: 30px;
 }
 
-
-/* TODO left i right wygladają tak samo, nie trzeba ich rozdziela na float left i right - do omówienia ze mną*/
-.left {
-    position: relative;
-    float: left;
-    width: 47%;
-    text-align: justify;
-}
-
-.right {
-    position: relative;
-    float: left;
-    width: 47%;
-    bottom: -15vh; /*cy jest jakiś lepszy sposób na wyrównanie tekstu do dołu?*/ /* TODO nie używamy vh, tylko jak tło głównego slidera*/
-    text-align: justify;
-}
-
 /* TODO w takich przypadkach tworzy się klasę .clearfix, która ma clear:both, używamy takiego diva do czyśzczenia floatów */
-.middle {
+.clearfix {
     clear: both;
+}
+
+.product-offers {
+
 }
 
 .item-background {
     position: relative;
     float: left;
-    height: 200px;
+    height: 300px;
 }
 
-.item-width-minimum {
-    width: 25%;
-}
-
-/* TODO klasy poniżej nie sumują się do 100% */
 .item-width-standard {
     width: 33.333333333333%;
 }
 
 .item-width-maximum {
     width: 66.666666666666%;
+}
+
+.item-vertical-align {
+    position: relative;
+    background-color: transparent;
+    top:50%;
+    transform: translateY(-50%);
+    padding: 0px 20px;
 }
 
 .item-pink {
@@ -132,28 +133,25 @@ header div div p {
 
 .item-first-image {
     background-image: url('../images/zachod.jpg');
-    background-size: 390px 200px;
+    background-size: 390px 300px;
 }
 
 .item-second-image {
     background-image: url('../images/slonce.jpg');
-    background-size: 780px 200px;
+    background-size: 780px 300px;
 }
 
 .item-green {
     background-color: lightgreen;
 }
 
-.item-vertical-align {
-    position: relative;
-    background-color: transparent;
+.item-properties {
     color: white;
-    top:50%;
-    transform: translateY(-50%);
 }
 
-.item-properties {
-    padding-left: 20px;
+.item-properties-p {
+    font-size: 12px;
+    color: white;
 }
 
 .button {
@@ -166,9 +164,17 @@ header div div p {
     cursor: pointer;
 }
 
-.section-title2 {
-    margin-top: 75px;
+.product-details {
+
+}
+
+.product-details-section-title {
+    margin-top: 130px;
     font-size: 35px;
+}
+
+.item-width-minimum {
+    width: 25%;
 }
 
 .item-properties2 {
@@ -179,12 +185,165 @@ header div div p {
     background-image:url('../images/kierownica.jpg');
     background-size: cover;
     position: relative;
+    margin-top: 100px;
     height: 100vh;
-    clear: both;
+}
+
+.product-efficiency-text {
+    position: absolute; /* TODO absolute tylko tam gdzie rodzic ma position: relative */
+    width: 40%;
+    top: 50vh;
+    font-family: Palatino, serif;
+    color: white;
+    text-shadow: 4px 4px 8px black;
+}
+
+.product-efficiency-text-title {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.product-efficiency-text-subtitle {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.product-reasons {
+    background-color: lightgreen;
+    width: 100%;
+    padding-bottom:100px;
+}
+
+
+.product-reasons-title {
+    font-size: 35px;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.item-background2 {
+    position: relative;
+    float: left;
+}
+
+.item-properties-p2 {
+    font-size: 16px;
+    color: white;
+}
+
+.product-plan {
+    background-color: aliceblue;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.item-width-half {
+    width:40%;
+}
+
+.item-background3 {
+    position: relative;
+    float: right;
+}
+
+.item-hover {
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.item-hover:hover {
+    background-color: white;
+    box-shadow: 3px 3px 6px 6px grey;
+}
+
+.item-properties3 {
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.item-properties4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.item-properties-p3 {
+    line-height: 20px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.font-weight {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: lightcoral;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.button2 {
+    background-color: lightgreen;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 400ms linear;
+    padding: 20px;
+}
+
+.button2:hover {
+    background: lightcoral;
 }
 
 .footer {
-    margin-top:300px;
+    background-color: navy;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.item-properties-p4 {
+    font-size: 14px;
+    padding-right: 50px;
+}
+
+.footer-menu {
+    position: relative;
+    float: left;
+    width: 33.33333%;
+}
+
+.input {
+    position: relative;
+    float: left;
+    height: 35px;
+    width: 300px;
+}
+
+.button3 {
+    position: relative;
+    float: left;
+    height: 41px;
+    width: 50px;
+    background-color: lightgreen;
+    color: white;
+    font-size: 22px;
+    border: none;
+}
+
+.button3:hover {
+    box-shadow: 3px 3px 6px 6px grey
 }
 
 
