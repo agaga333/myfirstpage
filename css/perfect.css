@@ -187,6 +187,7 @@ html {
     position: relative;
     margin-top: 100px;
     height: 900px;
+    background-position: center;
 }
 
 /*.img-responsive {
