@@ -73,7 +73,7 @@ html {
     position: relative;
     float: left;
     width: 50%;
-    bottom: -15vh; /*cy jest jakiś lepszy sposób na wyrównanie tekstu do dołu?*/ /* TODO nie używamy vh, tylko jak tło głównego slidera*/
+    padding-top: 120px; /*cy jest jakiś lepszy sposób na wyrównanie tekstu do dołu?*/ /* TODO nie używamy vh, tylko jak tło głównego slidera*/
     text-align: justify;
 }
 
@@ -120,7 +120,7 @@ html {
     background-color: transparent;
     top:50%;
     transform: translateY(-50%);
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 .item-pink {
@@ -190,7 +190,7 @@ html {
     background-position: center;
 }
 
-/*.img-responsive {
+/*.img-responsive { Dla obrazków!
     display: block;
     max-width: 100%;
     height: auto;
