@@ -189,11 +189,11 @@ html {
     height: 900px;
 }
 
-.img-responsive {
+/*.img-responsive {
     display: block;
     max-width: 100%;
     height: auto;
-}
+}*/
 
 .product-efficiency-text {
     position: absolute; /* TODO absolute tylko tam gdzie rodzic ma position: relative */
